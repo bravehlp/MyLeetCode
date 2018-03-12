@@ -1,4 +1,3 @@
-import $_007_reverse_integer.Solution;
 import org.junit.Test;
 
 /**
@@ -20,8 +19,19 @@ public class SolutionTest {
         int num2 = 1534236469;
 //        int num3 = 9646324351;
 
-        Solution solution = new Solution();
+        $_007_reverse_integer.Solution solution = new $_007_reverse_integer.Solution();
         System.out.println(solution.reverse(num2));
+    }
+
+    @Test
+    public void test009PalindromeNumber(){
+
+        int num = -141;
+
+        $009_palindrome_number.Solution solution = new $009_palindrome_number.Solution();
+        System.out.println(solution.isPalindrome(num));
+
+
     }
 
 }

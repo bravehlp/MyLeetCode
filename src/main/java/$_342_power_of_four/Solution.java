@@ -48,7 +48,7 @@ public class Solution {
      * 观察发现4的幂中总会有偶数个0，且1只出现在偶数位置上（从右端数）；
      * 只要1不出现在偶数位置位置上，就不是4的幂。因此可以设置一个偶数位上都是1，奇数位都是0的二进制数。
      * standard = (01010101010101010101010101010101)2
-     * 只要让n与此标准数做'与'运算，若结果为1，则为4的幂。
+     * 只要让n与此标准数做'与'运算，结果应当仍未n，则为4的幂。
      *
      *
      *
@@ -70,12 +70,9 @@ public class Solution {
             return false;
         }
 
-        //
         int standard = 0b01010101010101010101010101010101;
 
-        boolean result = (n & standard) == 1 ? true : false;
-
-
+        boolean result = (n & standard) == n ? true : false;
         return result;
     }
 

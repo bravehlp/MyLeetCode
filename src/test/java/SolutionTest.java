@@ -47,16 +47,9 @@ public class SolutionTest {
     @Test
     public void test342PowerOfFour() {
 
-        int num = -4;
-
-        int a = 0b10101010101010101010101010101010;
-
-        System.out.println(Integer.lowestOneBit(a));
-        System.out.println(Integer.highestOneBit(a));
-        System.out.println(Integer.bitCount(a));
-
-//        $_342_power_of_four.Solution solution = new $_342_power_of_four.Solution();
-//        System.out.println(solution.isPowerOfFour(num));
+        int num = 32;
+        $_342_power_of_four.Solution solution = new $_342_power_of_four.Solution();
+        System.out.println(solution.isPowerOfFour(num));
     }
 
 
